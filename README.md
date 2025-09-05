@@ -1,1 +1,1 @@
-# Vue-ProgressBar
+This is small project with VueJs.
