@@ -1,0 +1,70 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timad.com | VUE.JS 3</title>
+    <script src="./../cdns/Vue cdn/vue.js"></script>
+    <link rel="stylesheet" href="./../cdns/bootstrap cdn/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./../cdns/toastr cdn/toastr.css">
+</head>
+
+<body style="background-color: #badffd;">
+
+    <div style="justify-content: center; display: flex; align-items: center;" class="h-100">
+
+        <div id="app">
+            <p class="text-center mb-5 fs-4 fw-bold"><svg fill="#166616" width="64px" height="64px"
+                    viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#166616" stroke-width="0.00032"
+                    transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#166616CCCCCC"
+                        stroke-width="0.192"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M24.306 4.019h-4.806l-3.5 5.537-3-5.537h-11l14 23.981 14-23.981zM5.481 6.019h3.363l7.156 12.387 7.15-12.387h3.363l-10.512 18.012z">
+                        </path>
+                    </g>
+                </svg>ProgressBar with Vue JS &#x2764;</p>
+            <div>
+                <div class="progress">
+                    <div :class="{'progressInner':true ,
+                'red': isFirst ,
+                'orange': isCenter ,
+                'green': isLast}" :style="{width:status+'%'}"></div>
+                </div>
+                <button @mousemove="Increase" style="background-color: #20262b;" class="btn"><span
+                        style="color: #badffd;">+</span></button>
+                <button @mousemove="Decreas" style="background-color: #20262b;" class="btn"><span
+                        style="color: #badffd;">-</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-0 d-flex row justify-content-between w-100 text-center border-4" style="width: 10%; height: 10%; position: absolute; flex-direction: row-reverse;">
+        <div class="col-4 border-4 border-top border-start border-primary align-items-center d-flex justify-content-center">
+            <div>
+                <span class="fw-bold">Mohammad Alizad</span>
+            </div>
+            <img src="./img/me.jpg" style=" width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: center;" alt="mohammad alizad">
+        </div>
+        <div class="col-4 border-4 border-top border-start border-primary align-items-center d-flex justify-content-center" style="flex-direction: row-reverse;">
+            <p>:Checkout my GitHub</p><br>
+            <p class="fw-bold">Mohamadalizad@</p>
+        </div>
+        <div class="col-4 border-4 border-top border-start border-primary align-items-center d-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width:30px; height:30px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+            </svg>
+            Repost</div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

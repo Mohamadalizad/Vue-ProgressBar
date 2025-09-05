@@ -1,0 +1,70 @@
+/* 4 */
+ .box{
+    background-color: gray;
+    width: 400px;
+    height: 300px;
+} 
+/* 8 */
+.container{
+    margin: 2rem auto ;
+    display: flex;
+    justify-content: center;
+}
+.progress{
+    position: relative;
+    width: 400px ;
+    height: 20px;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: rgb(87, 86, 86);
+}
+.progressInner{
+    position: absolute;
+    border-radius: 5px;
+    width: 10%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgb(128, 128, 128, 0.514);
+    transition: .5s;
+}
+.btn{
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 128px;
+    color: white;
+    border: solid 1px gray;
+    background-color: rgb(7, 158, 7);
+}
+.btn:hover{
+    background-color: rgb(10, 99, 10) ;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.bg-melo-gray {
+    background-color: rgb(175, 173, 173);
+}
+.border-left {
+    border-left: solid 2px rgb(209, 207, 207);
+}
+.active {
+    background-color: white !important;
+}
+.contacts{
+    background-color: rgba(128, 128, 128, 0.247);
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.295);
+    padding: .5rem;
+    transition: all ease .3s;
+}
+.contacts:hover{
+    background-color: rgba(26, 7, 77, 0.288);
+    transform:translateX(-3px) ;
+}
